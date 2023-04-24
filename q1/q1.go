@@ -14,6 +14,18 @@ package q1
 //da melancia for menor ou igual a 0, a função deve retornar um erro.
 
 func DivideWatermelon(weight int) (bool, error) {
-	// Seu código aqui
+
+	var ped1 int
+
+	for i := 1; i < 12; i++ {
+
+		if weight/i == 0 {
+			ped1 = weight / i
+		}
+		if ped1/2 == 0 {
+			continue
+		}
+	}
+
 	return false, nil
 }
